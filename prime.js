@@ -1,8 +1,16 @@
-function checkPrime(num)
-for(let i=1; i<num; i--)
+function checkPrime(num){
+let factor=0;
+for(let i=1; i<=num;i++){
+if(num%i==0){
+factor++
+}
+}
+if(factor==2){
+console.log(num,"prime")
+}
+else
 {
-if(num%i){
-return true;
+console.log("null")
 }
 }
-return false;
+checkprime(12)
