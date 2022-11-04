@@ -1,15 +1,19 @@
 function checkPrime(num){
-let count=0;
-for(let i=1; i<=num; i++)
-{
+
+
+let factor=0;
+for(let i=1; i<=num;i++){
 if(num%i==0){
-count++
+factor++
 }
 }
-if(count==2){
+if(factor==2){
 console.log(num,"prime")
-}else{
-console.log("Not a prime")
+}
+else
+{
+console.log("null")
 }
 }
-checkPrime(17);
+checkprime(12)
+
